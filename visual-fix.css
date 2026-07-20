@@ -1,0 +1,20 @@
+/* Keep the complete analysis visual inside the hero viewport. */
+@media (min-width: 801px) {
+  .orb-wrap { right: 45px; bottom: -50px; }
+  .decompiler { right: 10px; top: 42px; }
+  .graph-entry { left: 34px; top: 118px; }
+  .graph-sink { right: 28px; bottom: 62px; }
+}
+
+@media (max-width: 800px) {
+  .orb-wrap { right: 0; bottom: -15px; }
+  .decompiler {
+    width: 245px;
+    right: 76px;
+    top: 42px;
+    transform: scale(.56) rotateZ(1deg);
+    transform-origin: top right;
+  }
+  .graph-entry { left: 42px; top: 122px; transform: scale(.7); }
+  .graph-sink { right: 62px; bottom: 58px; transform: scale(.7); }
+}
