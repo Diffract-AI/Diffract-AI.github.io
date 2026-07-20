@@ -19,30 +19,23 @@
   .graph-sink { right: 62px; bottom: 58px; transform: scale(.7); }
 }
 
-/* Generated primary logo showcase */
-.closing-inner {
-  display: grid;
-  grid-template-columns: 1.45fr .55fr;
-  gap: 70px;
-  align-items: center;
-}
-
-.logo-showcase {
-  margin: 0;
-  padding: 10px;
-  background: #090914;
-  border: 1px solid rgba(255,255,255,.32);
-  box-shadow: 0 30px 80px rgba(4,18,25,.3);
-  transform: rotate(2deg);
-}
-
-.logo-showcase img {
+/* Compact crop of the generated symbol for navigation and footer. */
+.brand-image {
+  position: relative;
   display: block;
-  width: 100%;
-  height: auto;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
 }
 
-@media (max-width: 800px) {
-  .closing-inner { grid-template-columns: 1fr; gap: 55px; }
-  .logo-showcase { width: min(72vw, 340px); }
+.brand-image img {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  max-width: none;
+  left: -20px;
+  top: -17px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px rgba(0,240,192,.35));
 }
