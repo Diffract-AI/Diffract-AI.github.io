@@ -39,3 +39,23 @@
   object-fit: cover;
   filter: drop-shadow(0 0 5px rgba(0,240,192,.35));
 }
+
+.footer-mark {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  overflow: hidden;
+  vertical-align: -3px;
+}
+
+.footer-mark img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  max-width: none;
+  left: -9px;
+  top: -8px;
+  object-fit: cover;
+}
