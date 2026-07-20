@@ -18,3 +18,31 @@
   .graph-entry { left: 42px; top: 122px; transform: scale(.7); }
   .graph-sink { right: 62px; bottom: 58px; transform: scale(.7); }
 }
+
+/* Generated primary logo showcase */
+.closing-inner {
+  display: grid;
+  grid-template-columns: 1.45fr .55fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.logo-showcase {
+  margin: 0;
+  padding: 10px;
+  background: #090914;
+  border: 1px solid rgba(255,255,255,.32);
+  box-shadow: 0 30px 80px rgba(4,18,25,.3);
+  transform: rotate(2deg);
+}
+
+.logo-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .closing-inner { grid-template-columns: 1fr; gap: 55px; }
+  .logo-showcase { width: min(72vw, 340px); }
+}
