@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="News, recognition and updates from Diffract's vulnerability research team." />
+  <meta name="theme-color" content="#080c11" />
+  <meta property="og:title" content="News — Diffract" />
+  <meta property="og:description" content="The latest news and recognition from Diffract." />
+  <title>News — Diffract</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="../visual-fix.css" />
+  <link rel="stylesheet" href="../site.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body class="news-page">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav shell">
+    <a class="brand" href="../index.html" aria-label="Diffract home"><span class="brand-image" aria-hidden="true"><img src="../assets/diffract-logo-v2.png" alt="" /></span><span>DIFFRACT</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#results">Results</a>
+      <details class="nav-research">
+        <summary>Research <span aria-hidden="true">⌄</span></summary>
+        <div class="research-menu">
+          <div class="research-menu-copy"><p class="research-menu-label">DIFFRACT RESEARCH</p><details class="reports-picker"><summary class="research-menu-item"><span><b>Reports</b><small>Choose a technical report or root-cause analysis.</small></span><i>⌄</i></summary><div class="report-options"><a class="report-option" href="../research/vulnerabilities/"><span><small>VULNERABILITY INDEX</small><b>Browse CVE records</b><em>Public advisories and disclosed findings</em></span><i>→</i></a></div></details></div>
+          <a class="research-menu-feature" href="../research/"><span>REPORT ARCHIVE</span><strong>Technical research,<br />organized in one place.</strong><small>Browse all reports →</small></a>
+        </div>
+      </details>
+      <a href="./" aria-current="page">News</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#team">Team</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <a class="nav-cta" href="https://msrc.microsoft.com/leaderboard" target="_blank" rel="noreferrer">MSRC leaderboard <span>↗</span></a>
+  </header>
+  <main id="top">
+    <section class="news-hero shell">
+      <p class="kicker reveal">DIFFRACT / NEWS</p>
+      <h1 class="reveal">In the news.</h1>
+      <p class="reveal">Research milestones, recognition, and updates from the team.</p>
+    </section>
+    <section class="news-archive shell" aria-label="News archive">
+      <p class="news-year reveal">2026</p>
+      <div class="news-list">
+        <article class="news-row reveal">
+          <time datetime="2026-10-27">27–28 OCT 2026</time>
+          <div class="news-copy"><span class="news-category">UPCOMING TALK</span><h3>Speaking at OffensiveCon Tokyo 2026.</h3><p>Yunpeng Tian and wgg will present “Breaking NTFS at Scale: From an Unmapped Attack Surface to SYSTEM” at OffensiveCon Tokyo, held on October 27–28.</p></div>
+          <a class="news-arrow" href="https://www.offensivecon.jp/speakers/2026/yunpeng-tian-and-gongming-wang.html" target="_blank" rel="noreferrer" aria-label="Read more: Speaking at OffensiveCon Tokyo 2026.">↗</a>
+        </article>
+        <article class="news-row reveal" id="october-2026">
+          <time datetime="2026-10">OCT 2026</time>
+          <div class="news-copy"><span class="news-category">SECURITY UPDATES</span><h3>86 Windows CVEs reported by Diffract fixed in October.</h3><p>Microsoft’s October 2026 security updates fixed 86 Windows CVEs reported by the Diffract team.</p><a class="news-source" href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct" target="_blank" rel="noreferrer">Microsoft October 2026 release notes ↗</a></div>
+          <a class="news-arrow" href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct" target="_blank" rel="noreferrer" aria-label="Read Microsoft’s October 2026 security update release notes">↗</a>
+        </article>
+        <article class="news-row reveal" id="september-2026">
+          <time datetime="2026-09">SEP 2026</time>
+          <div class="news-copy"><span class="news-category">SECURITY UPDATES</span><h3>80 Windows CVEs reported by Diffract fixed in September.</h3><p>Microsoft’s September 2026 security updates fixed 80 Windows CVEs reported by the Diffract team, accounting for 11.1% of all Windows vulnerabilities fixed that month.</p><a class="news-source" href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Sep" target="_blank" rel="noreferrer">Microsoft September 2026 release notes ↗</a></div>
+          <a class="news-arrow" href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Sep" target="_blank" rel="noreferrer" aria-label="Read Microsoft’s September 2026 security update release notes">↗</a>
+        </article>
+        <article class="news-row reveal">
+          <time datetime="2026-07-16">16 JUL 2026</time>
+          <div class="news-copy"><span class="news-category">RECOGNITION</span><h3>First on the MSRC Windows Q2 leaderboard.</h3><p>Thanatos Tian, wgg and 2st with Diffract lead the Windows category in Microsoft’s Q2 researcher recognition.</p></div>
+          <a class="news-arrow" href="https://www.microsoft.com/en-us/msrc/blog/2026/07/congratulations-to-the-top-msrc-2026-q2-security-researchers" target="_blank" rel="noreferrer" aria-label="Read more: First on the MSRC Windows Q2 leaderboard.">↗</a>
+        </article>
+        <article class="news-row reveal">
+          <time datetime="2026-07-06">06 JUL 2026</time>
+          <div class="news-copy"><span class="news-category">RECOGNITION</span><h3>MSRC 2026 Most Valuable Researchers.</h3><p>Annual recognition for contributions to Microsoft security. Explore the announcement and the 2026 leaderboards.</p></div>
+          <a class="news-arrow" href="https://www.microsoft.com/en-us/msrc/blog/2026/07/congratulations-to-the-msrc-2026-most-valuable-security-researchers1" target="_blank" rel="noreferrer" aria-label="Read more: MSRC 2026 Most Valuable Researchers.">↗</a>
+        </article>
+      </div>
+      <div class="news-follow reveal"><p>Follow the team for more research updates.</p><a class="text-link" href="https://x.com/DiffractAI" target="_blank" rel="noreferrer">@DiffractAI on X <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer class="shell" id="site-footer"><p>AI-powered vulnerability research.</p><a class="official-x" href="https://x.com/DiffractAI" target="_blank" rel="noreferrer">X / @DiffractAI <span>↗</span></a><small>© <span id="year"></span><span class="footer-mark" aria-label="Diffract"><img src="../assets/diffract-logo-v2.png" alt="Diffract" /></span><span class="footer-name">Diffract</span></small></footer>
+  <script src="../script.js"></script>
+</body>
+</html>

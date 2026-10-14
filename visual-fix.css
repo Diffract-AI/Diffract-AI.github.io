@@ -1,0 +1,120 @@
+/* Keep the complete analysis visual inside the hero viewport. */
+@media (min-width: 801px) {
+  .orb-wrap { right: 45px; bottom: -50px; }
+  .decompiler { right: 10px; top: 42px; }
+  .graph-entry { left: 34px; top: 118px; }
+  .graph-sink { right: 28px; bottom: 62px; }
+}
+
+@media (max-width: 800px) {
+  .orb-wrap { right: 0; bottom: -15px; }
+  .decompiler {
+    width: 245px;
+    right: 76px;
+    top: 42px;
+    transform: scale(.56) rotateZ(1deg);
+    transform-origin: top right;
+  }
+  .graph-entry { left: 42px; top: 122px; transform: scale(.7); }
+  .graph-sink { right: 62px; bottom: 58px; transform: scale(.7); }
+}
+
+/* Compact crop of the generated symbol for navigation and footer. */
+.brand-image {
+  position: relative;
+  display: block;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.brand-image img {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  max-width: none;
+  left: -20px;
+  top: -17px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px rgba(0,240,192,.35));
+}
+
+.footer-mark {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  overflow: hidden;
+  vertical-align: -3px;
+}
+
+.footer-mark img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  max-width: none;
+  left: -9px;
+  top: -8px;
+  object-fit: cover;
+}
+
+#site-footer {
+  height: 230px;
+  justify-content: space-between;
+}
+
+#site-footer p,
+#site-footer small {
+  font-size: clamp(26px, 2.25vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  color: #dce7e9;
+}
+
+#site-footer small {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  white-space: nowrap;
+}
+
+#site-footer .footer-mark {
+  width: 48px;
+  height: 48px;
+  margin: 0 8px 0 13px;
+  vertical-align: middle;
+}
+
+#site-footer .footer-mark img {
+  width: 118px;
+  height: 118px;
+  left: -35px;
+  top: -30px;
+}
+
+.footer-name { color: #f4fbff; }
+
+.official-x {
+  color: #dce7e9;
+  border-bottom: 1px solid #43545c;
+  padding-bottom: 7px;
+  font: 400 13px var(--mono);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.official-x span { color: var(--acid); }
+
+.official-x:hover { color: #fff; border-color: var(--acid); }
+
+@media (max-width: 800px) {
+  #site-footer { height: 190px; display: block; padding-top: 52px; }
+  #site-footer p,
+  #site-footer small { font-size: 18px; }
+  #site-footer .official-x { display: inline-block; margin-top: 20px; font-size: 12px; }
+  #site-footer small { margin: 22px 0 0; }
+  #site-footer .footer-mark { width: 34px; height: 34px; margin-inline: 8px 5px; }
+  #site-footer .footer-mark img { width: 84px; height: 84px; left: -25px; top: -21px; }
+}
